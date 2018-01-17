@@ -15,4 +15,18 @@ class Room
     private $capacity;
     private $address;
 
+    /**
+     * Room constructor.
+     * @param $name
+     * @param $capacity
+     * @param $address
+     */
+    public function __construct(string $name, int $capacity, Address $address)
+    {
+        $this->name = $name;
+        $this->capacity = $capacity;
+        $this->address = $address;
+    }
+
+
 }
