@@ -60,6 +60,11 @@
       "path": "/logout",
       "methods": ["GET"],
       "action": "Metinet:Controllers:SecurityController::logout"
+    },
+    "security_inscription": {
+      "path": "/inscription",
+      "methods": ["GET", "POST"],
+      "action": "Metinet:Controllers:SecurityController::inscription"
     }
   }
 }

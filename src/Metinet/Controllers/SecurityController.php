@@ -54,4 +54,13 @@ class SecurityController extends Controller
 
         return new Response('', 303, ['Location' => '/login']);
     }
+
+    public function inscription(Request $request):Response
+    {
+
+        return new Response($this->render(
+            'inscription.html.php',
+            [ 'email' => $email ?? '']
+        ));
+    }
 }
